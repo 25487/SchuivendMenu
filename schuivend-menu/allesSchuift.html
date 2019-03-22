@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Taurese Usman MD1A">
+  <link rel="stylesheet" href="csscss.css">
+  <title>InhoudSchuift</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    #toggleMenu:checked ~ main {
+      margin-left: 10em;
+    }
+    #toggleLabel::before {
+      content: "\2630";
+      cursor: pointer;
+    }
+    #toggleMenu:checked ~ main #toggleLabel::before {
+      content: "\2715";
+    }
+  </style>
+</head>
+<body>
+
+  <button type="button" class="toggleLabel" id="toggleMenu" data-toggle="collapse" data-target="#demo">Menu</button>
+  <div id="demo" class="collapse">
+
+    <nav>
+      <h4>Menu</h4>
+      <ul>
+        <li>
+          <a href="allesSchuift.html" class"actief" style="color: rgb(0,255,0)">Horizontaal Menu</a>
+        </li>
+        <li>
+          <a href="index.html" style="color: rgb(0,255,0)">Menu schuift</a>
+        </li>
+        <li>
+          <a href="inhoudSchuift.html" style="color: rgb(0,255,0)">Tekst schuift</a>
+        </li>
+      </ul>
+    </nav>
+</div>
+<main>
+  <label for="toggleMenu" id="toggleLabel"></label>
+  <h1>The Walking Dead: The Final Season</h1>
+  <p><img src="https://media.gq.com/photos/5ba923f680ea977b1708eb4a/16:9/w_1920,h_1080,c_limit/rip-telltale-games-gq.jpg" alt="" width="600px">
+  </p>
+  <p>
+    <i>Plot:<i>  After years on the road facing threats both
+     living and dead, a secluded school might finally be Clementine and AJ’s chance for a home. But protecting it will mean sacrifice. In this gripping, emotional final season, your choices define your relationships, shape your world, and determine how Clementine’s story ends.
+  </p>
+  <p>
+<i>Episodes:</i>  1:	"Done Running", 2:	"Suffer The Children", 3:	"Broken Toys" and 4:	"Take Us Back"
+  </p>
+  <p>
+
+  </p>
+  <P>
+  Bron Link:
+   <a href="https://walkingdead.fandom.com/wiki/Season_4_(Video_Game)">https://walkingdead.fandom.com/wiki/Season_4_(Video_Game)</a>
+  </p>
+  <div id="validatie">
+      <a href="http://validator.w3.org/check?uri=referer" target="_blank"><img alt="Valide HTML5" src="valid-html5-blue.png"></a>
+    </div>
+    <div id="validatie_css">
+      <a href="http://jigsaw.w3.org/css-validator/check/referer"><img alt="Valide CSS!" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"></a>
+    </div>
+ </main>
+</body>
+<footer class="validatie">
+
+ </footer>
+
+
+</html>

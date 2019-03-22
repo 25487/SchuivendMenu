@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="widt=device-width, initial-scale=1.0">
+<meta name="author" content="Taurese Usman MD1A">
+<link rel="stylesheet" href="css.css">
+<style>
+body {
+  font-family: Arial;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <nav>
+      <h4>Menu</h4>
+      <ul>
+        <li>
+          <a href="allesSchuift.html" class"actief" style="color: rgb(0,255,0)">Horizontaal Menu</a>
+        </li>
+        <li>
+          <a href="index.html" style="color: rgb(0,255,0)">Menu schuift</a>
+        </li>
+        <li>
+          <a href="inhoudSchuift.html" style="color: rgb(0,255,0)">Tekst schuift</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<main>
+  <label for="toggleMenu" id="toggleLabel"></label>
+  <h1>The Walking Dead: The Final Season</h1>
+  <p><img src="https://media.gq.com/photos/5ba923f680ea977b1708eb4a/16:9/w_1920,h_1080,c_limit/rip-telltale-games-gq.jpg" alt="" width="600px">
+  </p>
+  <p>
+    <i>Plot:<i>  After years on the road facing threats both
+     living and dead, a secluded school might finally be Clementine and AJ’s chance for a home. But protecting it will mean sacrifice. In this gripping, emotional final season, your choices define your relationships, shape your world, and determine how Clementine’s story ends.
+  </p>
+  <p>
+<i>Episodes:</i>  1:	"Done Running", 2:	"Suffer The Children", 3:	"Broken Toys" and 4:	"Take Us Back"
+  </p>
+  <p>
+
+  </p>
+  <P>
+  Bron Link:
+   <a href="https://walkingdead.fandom.com/wiki/Season_4_(Video_Game)">https://walkingdead.fandom.com/wiki/Season_4_(Video_Game)</a>
+  </p>
+  <div id="validatie">
+      <a href="http://validator.w3.org/check?uri=referer" target="_blank"><img alt="Valide HTML5" src="valid-html5-blue.png"></a>
+    </div>
+    <div id="validatie_css">
+      <a href="http://jigsaw.w3.org/css-validator/check/referer"><img alt="Valide CSS!" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"></a>
+    </div>
+ </main>
+</body>
+<footer class="validatie">
+
+ </footer>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+</body>
+</html>
